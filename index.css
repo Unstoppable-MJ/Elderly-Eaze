@@ -1,0 +1,401 @@
+/* General styles */
+:root {
+    --green-color: #295123;
+    --dark-color: #333;
+    --nav-color: rgb(60, 207, 84);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    transition: background-color 0.3s ease-in-out;
+    background-color: transparent;
+}
+
+.navbar.fixed {
+    background-color: rgba(63, 65, 66, 0.7);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 0.5rem;
+    max-width: 80px;
+}
+
+.main-name {
+    font-size: 1.5rem;
+    font-family: 'Cursive';
+    font-weight: 400;
+    color: #000000;
+}
+.b-i{
+    font-style: italic;
+    font-style: bold;
+    color: #000000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 .35rem;
+}
+
+.navbar ul li a {
+    padding: .5rem;
+    border-radius: .3rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000;
+    transition: all .3s;
+}
+
+.navbar ul li a:hover {
+    color: #960bf3;
+}
+
+/* Showcase section */
+.showcase {
+    position: relative;
+    background: url('comfort.jpg') no-repeat center center;
+    background-size: cover;
+    color: #000;
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    animation: slide 10s infinite;
+}
+
+.showcase .extra-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showcase-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    color: #000;
+}
+
+.showcase-content h2 {
+    font-size: 1.5rem;
+    font-family: 'Georgia', serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.01rem;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    padding: .3rem 2rem;
+    font-size: 1rem;
+    border-radius: .7rem;
+    text-align: center;
+}
+
+.btn-green {
+    background-color: black;
+    color: #fff;
+    display: inline-block;
+    padding: .7rem;
+    font-size: 1rem;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.btn-green:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: lightcoral;
+    color: #111;
+}
+
+.btn-primary:hover {
+    background-color: rgba(211, 131, 223, 0.5);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.container1 {
+    width: 50%; /* Adjusted width */
+    margin: -20px auto 10px auto; /* Adjusted margin */
+    position: relative;
+    z-index: 2;
+}
+
+.rounded-rectangle {
+    border-radius: 4rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem; 
+    color: #fff;
+    font-size: 0.8rem; /* Adjusted font size */
+}
+
+.rounded-rectangle h5 {
+    font-size: 1rem;
+}
+
+.flex-container {
+    display:flex;
+    width: 100%;
+}
+
+.text-left {
+    flex: 1;
+    text-align: left;
+}
+.text-middle {
+    flex: 1;
+    text-align: center;
+}
+.text-right {
+    flex: 1;
+    text-align: right;
+}
+
+/* .intro-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px auto 10px auto;
+} */
+/* Slider Styles */
+.slider {
+    margin: -10px auto;
+}
+.slick-slide img {
+    margin-right: 50px; /* Adjust the value as needed */
+}
+.slider img {
+    width: 95%;
+    height: 20%;
+    border-radius: 6px;
+    
+}
+
+/* Navigation Arrows */
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 40px;
+ 
+}
+
+/* Updated Dropdown Styling */
+.answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #ffe2a7; /* Background color for answers */
+}
+.question-heading m-t{
+    color: #000;
+    font-size: smaller;
+    font-weight: 100;
+}
+/* Updated Question Styles */
+.question-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px; /* Added gap between containers */
+}
+
+.rounded-rectangle-gray {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    width: 48%; /* Adjust width for two questions per line */
+    position: relative;
+}
+
+.question-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-content h5 {
+    margin: 0;
+    color: #262626; /* Color for question text */
+}
+
+.arrow {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Arrow Animation */
+.rotate-down {
+    transform: rotate(180deg);
+}
+
+/* Hover Effect */
+.question:hover {
+    background-color: #e6e6e6;
+}
+
+/* Footer section */
+#pageFooter {
+    padding: 1.2rem 0;
+    background: #111;
+    color: #FFF;
+    height: 170px;
+
+}
+
+.container3 {
+    height: 170px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#pageFooter .footer-container3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.8rem;
+   
+    font-family: 'Roboto', sans-serif;
+}
+
+#pageFooter .footer-container>*:last-child {
+    grid-column: 1/span 4;
+    background-color: #444;
+    padding: .6rem;
+    text-align: center;
+}
+
+#pageFooter .footer-container h3 {
+    color: #fff;
+}
+
+.form-control {
+    display: block;
+    width: 70%;
+    padding: .6rem;
+    margin-bottom: .4rem;
+}
+
+.py-2 {
+    padding: 1.5rem 0 !important;
+}
+
+a:visited {
+    color: #fff;
+}
+
+@keyframes slide {
+    50% {
+        background: url('care.jpg') no-repeat center center;
+        background-size: 100% 100%;
+    }
+    75% {
+        background: url('engage.jpg') no-repeat center center;
+        background-size: 100% 100%;
+    }
+     100% {
+        background: url('IMG_0493.jpg') no-repeat center center;
+        background-size: 100% 100%;
+    }
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Style for the dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Show the dropdown content when the mouse is over the dropdown */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Show the dropdown content for both "Services" and "Trips" on hover */
+  .dropdown:hover .trips-dropdown-content,
+  .trips-dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Add this style to show the dropdown content when the parent "dropdown" is clicked */
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
